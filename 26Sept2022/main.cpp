@@ -1,9 +1,9 @@
-#include <iostream>
+    #include <iostream>
 using namespace std;
 
 // Global Variable
 int maxValue{3};
-static int totalBarang{0};
+static int totalPasien{0};
 static int i{0};
 
 // Struct
@@ -36,23 +36,23 @@ void pushNilai(struct antrianPasien *p)
     cout << "Masukkan Umur Pasien : ";
     cin >> p->pointer[i].umur;
     i++;
-    totalBarang++;
+    totalPasien++;
 }
 
 void hapusData(struct antrianPasien *p, int index)
 {
-    if (index >= 0 && index < totalBarang)
+    if (index >= 0 && index < totalPasien)
     {
-        for (int j = index; j < totalBarang - 1; j++)
+        for (int j = index; j < totalPasien - 1; j++)
             p->pointer[j] = p->pointer[j + 1];
-        totalBarang--;
+        totalPasien--;
         i--;
     }
 }
 
 void dequeDataTerakhir(struct antrianPasien *p)
 {
-    totalBarang--;
+    totalPasien--;
     i--;
     move(p);
     displayNilai(*p);
@@ -61,7 +61,7 @@ void dequeDataTerakhir(struct antrianPasien *p)
 void displayNilai(struct antrianPasien display)
 {
     cout << "\nHasil data : " << endl;
-        for (int j = 0; j < totalBarang; j++)
+        for (int j = 0; j < totalPasien; j++)
         {
             cout << "Data ke-" << j + 1 << "\n"
              << display.pointer[j].nama << " "
@@ -72,22 +72,22 @@ void displayNilai(struct antrianPasien display)
 
 void move (struct antrianPasien *p)
 {
-    if (totalBarang > 0)
+    if (totalPasien > 0)
     {
-        for (int i = 1; i <= totalBarang; i++)
+        for (int i = 1; i <= totalPasien; i++)
             p->pointer[i-1] = p->pointer[i];
     }
 }
 
 void hapusIndex (struct antrianPasien *p, int index)
 {
-    if  (index >= 0 && index < totalBarang)
+    if  (index >= 0 && index < totalPasien)
     {
-         for (int i = index; i < totalBarang-1; i++)
+         for (int i = index; i < totalPasien-1; i++)
         {
             p->pointer[i] = p->pointer[i+1];
         }
-        totalBarang--;
+        totalPasien--;
         i--;
     }
     else
@@ -112,7 +112,7 @@ int main()
 
         if (pilih == 1)
         {
-            if (totalBarang < maxValue)
+            if (totalPasien < maxValue)
                 pushNilai(&data);
             else
                 cout << "Antrian sudah penuh !!!" << endl;
@@ -121,14 +121,14 @@ int main()
             displayNilai(data);
         else if (pilih == 3)
         {
-            if (totalBarang != 0)
+            if (totalPasien != 0)
                 dequeDataTerakhir(&data);
             else
                 cout << "Antrian masih kosong!!!" << endl;
         }
         else if (pilih == 4)
         {
-                if (totalBarang != 0)
+                if (totalPasien != 0)
                 {
                     cout << "Masukkan index untuk dihapus : ";
                     cin >> indexHapus;
