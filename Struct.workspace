@@ -2,19 +2,22 @@
 <CodeLite_Workspace Name="Struct" Database="" Version="10000">
   <Project Name="12Sept2022" Path="12Sept2022/12Sept2022.project" Active="No"/>
   <Project Name="19Sept2022" Path="19Sept2022/19Sept2022.project" Active="No"/>
-  <Project Name="26Sept2022" Path="26Sept2022/26Sept2022.project" Active="Yes"/>
+  <Project Name="26Sept2022" Path="26Sept2022/26Sept2022.project" Active="No"/>
+  <Project Name="3Oct2022" Path="3Oct2022/3Oct2022.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="12Sept2022" ConfigName="Debug"/>
       <Project Name="19Sept2022" ConfigName="Debug"/>
       <Project Name="26Sept2022" ConfigName="Debug"/>
+      <Project Name="3Oct2022" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="12Sept2022" ConfigName="Release"/>
       <Project Name="19Sept2022" ConfigName="Release"/>
       <Project Name="26Sept2022" ConfigName="Release"/>
+      <Project Name="3Oct2022" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
