@@ -19,8 +19,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\4Oct2022\main.cpp" Name="FileName"/>
-      <int Value="188" Name="FirstVisibleLine"/>
-      <int Value="219" Name="CurrentLine"/>
+      <int Value="213" Name="FirstVisibleLine"/>
+      <int Value="226" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

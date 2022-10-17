@@ -2,6 +2,7 @@
 #include <iostream>
 #include <conio.h>
 #include <stdlib.h>
+#include <iomanip>
 
 using namespace std;
 
@@ -195,6 +196,7 @@ void insertAfter (int data1, int data2)
                     bantu->next = baru;
                     tail = baru;
                 }
+                break;
             }
             bantu = bantu->next;
         }
@@ -219,21 +221,59 @@ void insertBefore (int data1, int data2)
         
         while (bantu != NULL)
         {
+            if (head == tail)
+            {
+                baru->next = head;
+                head = baru;
+                break;
+            }
             if (bantu->next->NilaiX == cari1 && bantu->next->NilaiY == cari2)
             {
                     baru->next = bantu->next;
                     bantu->next = baru;
+                    break;
             }
-            else
-            {
-                baru->next = head;
-                head = baru;
-            }
-            break;
+            
+            bantu = bantu->next;
         }
     }
     else
         cout << "Data tidak ditemukan" << endl;
+}
+
+void hapusTengah ()
+{
+    struct TNode *hapus;
+    int dimana1 , dimana2;
+    cin>>dimana1 >> dimana2;
+    
+    if(head==tail)
+    {
+        hapus = head;
+        delete hapus;
+        head=NULL;
+        tail=NULL;
+      }    
+      else
+      {
+        struct TNode *bantu;
+	    bantu=head;
+        while(bantu!=NULL)
+        {
+            if (bantu->next->NilaiX == dimana1 && bantu->next->NilaiY == dimana2)
+            {
+                hapus=bantu->next;
+                bantu->next = bantu->next->next;
+                delete hapus;
+            }
+            else
+            {
+                cout << "Data Pertama dan Terakhir Tidak boleh dihapus" << endl;
+                break;
+            }
+            bantu = bantu->next;
+        }
+      }
 }
 void clear()
 {
@@ -252,9 +292,13 @@ void clear()
 int main()
 {
     int pil{}, databaru1{},databaru2{};
+    string nama {"The, Manuel Eric Saputra"};
+    string NIM  {"A11.2021.13250"};
     do
     {
         system("cls");
+        cout << setw(120)<< std::right << nama << endl;
+        cout << setw(120) <<std::right << NIM << endl;
         cout<<endl;
         cout<<" ============================"<<endl;
         cout<<" =   PROGRAM LINKED LIST    ="<<endl;
@@ -268,7 +312,8 @@ int main()
         cout<<" = 7. Tampil Data           ="<<endl;
         cout<<" = 8. Cari Data             ="<<endl;
         cout<<" = 9. Clear                 ="<<endl;
-        cout<<" = 10. Exit                 ="<<endl;
+        cout<<" = 10. Hapus Tengah         ="<<endl;
+        cout<<" = 11. Exit                 ="<<endl;
         cout<<" ============================"<<endl;
         cout<<" Masukan Pilihan : ";cin>>pil;
         switch (pil)
@@ -325,7 +370,16 @@ int main()
                 clear();
                 break;
             }
-            case 10: system("cls");{
+             case 10: system("cls");{
+                 if (isEmpty())
+                {
+                    cout << "Data masih kosong" << endl;
+                }
+                else
+                    hapusTengah();
+                break;
+            }
+            case 11: system("cls");{
                 return 0;
                 break;
             }
@@ -336,6 +390,6 @@ int main()
         }
         getch();
     }
-    while (pil!=10);
+    while (pil!=11);
     return 0;
 }
