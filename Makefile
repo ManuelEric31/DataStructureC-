@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ 4Oct2022 - Debug ]----------"
-	@cd "4Oct2022" && "$(MAKE)" -f  "4Oct2022.mk"
+	@echo "----------Building project:[ 7Nov2022SLLQueue - Debug ]----------"
+	@cd "7Nov2022SLLQueue" && "$(MAKE)" -f  "7Nov2022SLLQueue.mk"
 clean:
-	@echo "----------Cleaning project:[ 4Oct2022 - Debug ]----------"
-	@cd "4Oct2022" && "$(MAKE)" -f  "4Oct2022.mk" clean
+	@echo "----------Cleaning project:[ 7Nov2022SLLQueue - Debug ]----------"
+	@cd "7Nov2022SLLQueue" && "$(MAKE)" -f  "7Nov2022SLLQueue.mk" clean
