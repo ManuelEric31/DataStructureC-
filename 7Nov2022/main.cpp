@@ -12,7 +12,7 @@ struct Stack
 
 void init (struct Stack *st)
 {
-    st->top = -1;
+    st->top = 0;
 }
 
 int countNodes (struct Stack *bantu)
@@ -40,7 +40,7 @@ int isEmpty ()
 
 int isFullStack (struct Stack *st)
 {
-    if (st->top == st->size-1)
+    if (st->top == st->size)
         return 1;
     return 0;
 }

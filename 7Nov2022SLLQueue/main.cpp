@@ -12,7 +12,7 @@ struct Queue
 
 void init(struct Queue *st)
 {
-    st->top = -1;
+    st->top = 0;
 }
 
 int countNodes(struct Queue *bantu)
@@ -40,7 +40,7 @@ int isEmpty()
 
 int isFullQueue(struct Queue *st)
 {
-    if (st->top == st->size - 1)
+    if (st->top == st->size)
         return 1;
     return 0;
 }
