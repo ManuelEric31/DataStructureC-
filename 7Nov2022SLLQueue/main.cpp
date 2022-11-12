@@ -47,7 +47,7 @@ int isFullQueue(struct Queue *st)
 
 int isEmptyQueue(struct Queue *st)
 {
-    if (st->top == -1)
+    if (st->top == 0)
         return 1;
     return 0;
 }
