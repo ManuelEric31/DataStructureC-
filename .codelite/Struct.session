@@ -1,54 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\Struct.workspace">
-  <int Value="4" Name="m_selectedTab"/>
+  <int Value="1" Name="m_selectedTab"/>
   <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\Struct.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\26Sept2022\main.cpp" Name="FileName"/>
-      <int Value="40" Name="FirstVisibleLine"/>
-      <int Value="59" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\3Oct2022\main.cpp" Name="FileName"/>
-      <int Value="112" Name="FirstVisibleLine"/>
-      <int Value="112" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
       <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\4Oct2022\main.cpp" Name="FileName"/>
-      <int Value="75" Name="FirstVisibleLine"/>
-      <int Value="75" Name="CurrentLine"/>
+      <int Value="54" Name="FirstVisibleLine"/>
+      <int Value="60" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\19Sept2022\main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\7Nov2022\main.cpp" Name="FileName"/>
-      <int Value="105" Name="FirstVisibleLine"/>
-      <int Value="43" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\12Sept2022\main.cpp" Name="FileName"/>
-      <int Value="2" Name="FirstVisibleLine"/>
-      <int Value="2" Name="CurrentLine"/>
+      <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\21Nov2022\main.cpp" Name="FileName"/>
+      <int Value="182" Name="FirstVisibleLine"/>
+      <int Value="194" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\7Nov2022SLLQueue\main.cpp" Name="FileName"/>
-      <int Value="12" Name="FirstVisibleLine"/>
-      <int Value="22" Name="CurrentLine"/>
+      <int Value="114" Name="FirstVisibleLine"/>
+      <int Value="58" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
