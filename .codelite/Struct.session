@@ -19,15 +19,15 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\7Nov2022SLLQueue\main.cpp" Name="FileName"/>
-      <int Value="58" Name="FirstVisibleLine"/>
+      <int Value="57" Name="FirstVisibleLine"/>
       <int Value="58" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\UDINUS\SEMESTER 3\STRUKTUR DATA\DATA STRUCTURE UDINUS\DataStructureC-\CircularDLLProject\main.cpp" Name="FileName"/>
-      <int Value="263" Name="FirstVisibleLine"/>
-      <int Value="279" Name="CurrentLine"/>
+      <int Value="189" Name="FirstVisibleLine"/>
+      <int Value="202" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
