@@ -10,6 +10,8 @@
   <Project Name="14Nov2022" Path="14Nov2022/14Nov2022.project" Active="No"/>
   <Project Name="21Nov2022" Path="21Nov2022/21Nov2022.project" Active="No"/>
   <Project Name="CircularDLLProject" Path="CircularDLLProject/CircularDLLProject.project" Active="Yes"/>
+  <Project Name="5Des2022" Path="5Des2022/5Des2022.project" Active="No"/>
+  <Project Name="12Dec2022" Path="12Dec2022/12Dec2022.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -23,6 +25,9 @@
       <Project Name="14Nov2022" ConfigName="Debug"/>
       <Project Name="21Nov2022" ConfigName="Debug"/>
       <Project Name="CircularDLLProject" ConfigName="Debug"/>
+      <Project Name="5Des2022" ConfigName="Debug"/>
+      <Project Name="12Dec2022" ConfigName="Debug"/>
+      <Project Name="12Dec2022" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -36,6 +41,9 @@
       <Project Name="14Nov2022" ConfigName="Release"/>
       <Project Name="21Nov2022" ConfigName="Release"/>
       <Project Name="CircularDLLProject" ConfigName="Release"/>
+      <Project Name="5Des2022" ConfigName="Release"/>
+      <Project Name="12Dec2022" ConfigName="Release"/>
+      <Project Name="12Dec2022" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

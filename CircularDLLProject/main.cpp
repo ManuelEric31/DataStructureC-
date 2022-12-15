@@ -242,7 +242,7 @@ void hapusBelakang()
             }
             bantu = bantu->next;
         } while (bantu != head);
-         cout << delete1 << " dan " << delete2 << " terhapus " << endl;
+         cout << delete1 << "(Judul) dan " << delete2 << "(Artist) terhapus " << endl;
  }
 void tampil()
 {
@@ -317,10 +317,15 @@ void playFirstSong ()
 }
 void playNextSong ()
 {
-    if (bantuan != NULL)
-        bantuan = bantuan->next;
+    if (bantuan == NULL)
+    {
+        playFirstSong();
+        return;
+    }
     if (!isEmpty())
     {
+         if (bantuan != NULL)
+            bantuan = bantuan->next;
         cout << setw(40) << std::right << "Memainkan Musik Selanjutnya"  << endl;
         cout  << setw(54) << setfill('=') << "" << endl;
         cout << setfill(' ');
@@ -335,11 +340,16 @@ void playNextSong ()
 }
 void playPrevSong ()
 {
-    if (bantuan != NULL)
-        bantuan = bantuan->prev;
+    if (bantuan == NULL)
+    {
+        playFirstSong();
+        return;
+    }
     if (!isEmpty())
     {
-        cout << setw(40) << std::right << "Memainkan Musik Selanjutnya"  << endl;
+        if (bantuan != NULL)
+            bantuan = bantuan->prev;
+        cout << setw(40) << std::right << "Memainkan Musik Sebelumnya"  << endl;
         cout  << setw(54) << setfill('=') << "" << endl;
         cout << setfill(' ');
         cout << std::setw(20) << std::left << bantuan->judulLagu
@@ -353,6 +363,7 @@ void playPrevSong ()
 }
 int main()
 {
+    system("Color 0B");
     string judul{}, artist{}, key1{}, key2{};
     int pil{}, rating{};
     do
@@ -503,8 +514,14 @@ int main()
                 playPrevSong();
                 break;
             }
+            case 13 :
+            system("cls");
+            {
+                exit(1);
+                break;
+            }
         }
-
+        getch();
     } while (pil != 13);
     return 0;
-}
+}   
